@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sname=(prompt("enter your sname"));
+        var sid=parseInt(prompt("enter your sid"));
+        var m1=parseInt(prompt("enter your m1"));
+        var m2=parseInt(prompt("enter your m2"));
+        var m3=parseInt(prompt("enter your m3"));
+        var m4=parseInt(prompt("enter your m4"));
+        var m5=parseInt(prompt("enter your m5"));
+        var total=m1+m2+m3+m4+m5;
+        var percentage=(total/5);
+      
+         document.write("Student Name=:"+sname+"<br>");
+        document.write("Student Id=:"+sid+"<br>"); 
+            document.write("Student marks=:"+m1+" "+m2+" "+m3+" "+m4+" "+m5+"<br>");
+            document.write("Total=:"+total+"<br>");
+            document.write("Percentage=:"+percentage+"<br>");
+            if(percentage>90)
+            {
+                document.write("Grade A:"+percentage);
+            }
+           else if(percentage>80 && percentage<90)
+           {
+               document.write("Grade B:"+percentage);
+           }
+           else if(percentage>70 && percentage<80)
+           {
+               document.write("Grade C:"+percentage);
+           }
+           else if(percentage>60 && percentage<70)
+           {
+               document.write("Grade D:"+percentage);
+           }
+           else if(percentage>50 && percentage<60)
+           {
+               document.write("Grade E:"+percentage);
+           }
+            else
+            {
+                document.write("Fail="+percentage);
+            }
+
+               </script>
+</body>
+</html>
