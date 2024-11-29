@@ -1,52 +1,63 @@
+<!----1.WAP to create a calculator use javascript 
+2.use css 
+3.use DOM functionality
+ 4.use function
+ 5.all the operations need to update(+,-,*,/) 
+ 6.use events.
+------>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calci.js"></script>
 </head>
 <body>
-    <script>
-        var sname=(prompt("enter your sname"));
-        var sid=parseInt(prompt("enter your sid"));
-        var m1=parseInt(prompt("enter your m1"));
-        var m2=parseInt(prompt("enter your m2"));
-        var m3=parseInt(prompt("enter your m3"));
-        var m4=parseInt(prompt("enter your m4"));
-        var m5=parseInt(prompt("enter your m5"));
-        var total=m1+m2+m3+m4+m5;
-        var percentage=(total/5);
-      
-         document.write("Student Name=:"+sname+"<br>");
-        document.write("Student Id=:"+sid+"<br>"); 
-            document.write("Student marks=:"+m1+" "+m2+" "+m3+" "+m4+" "+m5+"<br>");
-            document.write("Total=:"+total+"<br>");
-            document.write("Percentage=:"+percentage+"<br>");
-            if(percentage>90)
-            {
-                document.write("Grade A:"+percentage);
-            }
-           else if(percentage>80 && percentage<90)
-           {
-               document.write("Grade B:"+percentage);
-           }
-           else if(percentage>70 && percentage<80)
-           {
-               document.write("Grade C:"+percentage);
-           }
-           else if(percentage>60 && percentage<70)
-           {
-               document.write("Grade D:"+percentage);
-           }
-           else if(percentage>50 && percentage<60)
-           {
-               document.write("Grade E:"+percentage);
-           }
-            else
-            {
-                document.write("Fail="+percentage);
-            }
+    <h1> Calculator</h1>
+ <div class="container"> 
+    <form>
+        <div class="calculator">
 
-               </script>
+        <input class="display-box" type="text" name="display" id="result">
+    </div>
+    <div>
+        <input type="button" value="AC" onclick="clearscrean()" id="btn">
+        <input type="button" value="/" onclick="display.value +='/'">
+        <input type="button" value="." onclick="display.value +='.'">
+    </div>
+    <div>
+        <input type="button" value="7" onclick="display.value +='7'">
+        <input type="button" value="8" onclick="display.value +='8'">
+        <input type="button" value="9" onclick="display.value +='9'">
+       
+    </div>
+    <div>
+        <input type="button" value="4" onclick="display.value +='4'">
+        <input type="button" value="5" onclick="display.value +='5'">
+        <input type="button" value="6" onclick="display.value +='6'">
+       
+    </div>
+    <div>
+        <input type="button" value="1" onclick="display.value +='1'">
+        <input type="button" value="2" onclick="display.value +='2'">
+        <input type="button" value="3" onclick="display.value +='3'">
+       
+    </div>
+    <div>
+        <input type="button" value="*" onclick="display.value +='*'">
+        <input type="button" value="-" onclick="display.value +='-'">
+        <input type="button" value="+" onclick="display.value +='+'">
+    </div>
+    <div>
+        <input type="button" value="00" onclick="display.value +='00'">
+        <input type="button" value="0" onclick="display.value +='0'">
+        <input type="button" value="=" onclick="calculate()" id="btn">
+       
+    </div>
+    </form>
+</div>
+   </div>
 </body>
 </html>
