@@ -1,0 +1,28 @@
+#container
+{
+    min-height:700px;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?cs=srgb&dl=pexels-pixabay-158063.jpg&fm=jpg");
+  }
+  h1{
+    text-align: center;
+    color: #084a4a;
+    padding: 50px;
+  }
+  
+#clock{
+    text-align: center;
+    font-size: 72px;
+    background: linear-gradient(45deg #023402,#666666);
+    color: #372384;
+    min-width: 280px;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    outline-color: #328423;
+}
+
